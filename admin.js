@@ -58,7 +58,7 @@ uploadPhoto.addEventListener("click", async () => {
 
     const fileName = Date.now() + "_" + file.name;
 
-     const { data, error } = await supabase.storage
+     const { data, error } = await window.sb.storage
   .from("photos")
   .upload(fileName, file);
 
