@@ -122,15 +122,15 @@ img{
 /* ================= HERO ================= */
 
 .hero{
-    .hero{
     margin-top:80px;
-    }
     width:100%;
     height:35vh;
     min-height:250px;
     position:relative;
     overflow:hidden;
     background:#000;
+}
+
 }
 .hero-banner{
     width:100%;
