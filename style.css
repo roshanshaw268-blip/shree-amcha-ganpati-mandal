@@ -1,5 +1,5 @@
 
-🕉️   SHREE AMCHA GANPATI MANDAL
+  SHREE AMCHA GANPATI MANDAL
    STYLE.CSS - PART 1
 
 *{
@@ -55,10 +55,12 @@ img{
 }
 
 .logo img{
-    width:26px;
-    height:26px;
+    width:60px;
+    height:60px;
+    object-fit:cover;
     border-radius:50%;
-    border:2px solid #FFD700;
+    border:3px solid #FFD700;
+}
 }
 
 .logo h2{
