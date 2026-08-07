@@ -1,13 +1,10 @@
-// Import Supabase
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+const supabaseUrl = "https://oqlgbmjcfrvagilkawkp.supabase.co";
 
-// Project URL
-const SUPABASE_URL = "https://oqlgbmjcfrvagilkawkp.supabase.co";
+const supabaseKey = "sb_publishable_jo_Kv1BCUr0mxoY6FcAnrw_9GEumP1z";
 
-// Publishable Key
-const SUPABASE_KEY = "sb_publishable_jo_Kv1BCUr0mxoY6FcAnrw_9GEumP1z";
-
-// Connect
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+const supabase = window.supabase.createClient(
+  supabaseUrl,
+  supabaseKey
+);
 
 console.log("Supabase Connected");
