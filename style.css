@@ -516,53 +516,50 @@ img{
 @media(max-width:768px){
 
 .header{
-    flex-direction:column;
-    height:auto;
-    padding:15px;
+    flex-direction:row;
+    height:60px;
+    padding:0 10px;
 }
 
-.navbar ul{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.hero{
-    height:60vh;
-}
-
-.about .container,
-.contact-wrapper{
-    grid-template-columns:1fr;
-    display:grid;
-}
-
-.about-image{
-    margin-bottom:30px;
-}
-
-.gallery-grid,
-  .latest-grid,
-.video-grid,
-.events-grid,
-.members-grid{
-    grid-template-columns:1fr;
-}
-
-.section-heading h2{
-    font-size:30px;
-}
-
-.logo h1{
-    font-size:18px;
-}
-
-.logo h2{
-    font-size:12px;
+.logo{
+    gap:8px;
 }
 
 .logo img{
-    width:45px;
-    height:45px;
+    width:32px;
+    height:32px;
+}
+
+.logo h1{
+    font-size:14px;
+}
+
+.logo h2{
+    font-size:10px;
+}
+
+.logo p{
+    font-size:8px;
+}
+
+.navbar ul{
+    gap:10px;
+    flex-wrap:nowrap;
+}
+
+.navbar ul li a{
+    font-size:12px;
+}
+
+.header-icons a{
+    width:30px;
+    height:30px;
+    font-size:14px;
+}
+
+.hero{
+    margin-top:60px;
+    height:35vh;
 }
 
 }
