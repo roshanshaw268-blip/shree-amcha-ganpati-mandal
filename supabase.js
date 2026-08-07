@@ -8,3 +8,4 @@ const supabase = window.supabase.createClient(
 );
 
 console.log("Supabase Connected");
+alert("Supabase JS Loaded");
