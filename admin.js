@@ -41,12 +41,31 @@ document.getElementById("addMember");
 
 const addEvent =
 document.getElementById("addEvent");
+uploadPhoto.addEventListener("click", async () => {
 
-uploadPhoto.addEventListener("click",()=>{
+const file = document.getElementById("photoUpload").files[0];
 
-alert("Photo Upload Feature Coming Soon");
+if(!file){
+alert("Please Select Photo");
+return;
+}
+
+const fileName = Date.now() + "_" + file.name;
+
+const { data, error } = await supabase.storage
+.from("photos")
+.upload(fileName, file);
+
+if(error){
+alert("Upload Failed");
+console.log(error);
+return;
+}
+
+alert("Photo Uploaded Successfully");
 
 });
+
 
 uploadVideo.addEventListener("click",()=>{
 
