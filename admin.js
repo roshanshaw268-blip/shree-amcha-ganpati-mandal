@@ -45,7 +45,9 @@ document.getElementById("addEvent");
 uploadPhoto.addEventListener("click", async () => {
   
 alert("Upload Button Clicked");
+  
 alert(typeof supabase);
+  
 const file = document.getElementById("photoUpload").files[0];
 
 if(!file){
