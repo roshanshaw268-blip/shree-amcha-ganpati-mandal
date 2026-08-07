@@ -1,4 +1,6 @@
 alert("Admin JS Loaded");
+alert(typeof supabase);
+alert(JSON.stringify(supabase));
 // ======================================
 // SHREE AMCHA GANPATI MANDAL
 // ADMIN PANEL - PART 1
