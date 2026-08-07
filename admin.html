@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel | Shree Amcha Ganpati Mandal</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="admin-header">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<div>
+
+<h2>SHREE AMCHA</h2>
+
+<h1>GANPATI MANDAL</h1>
+
+<p>ADMIN DASHBOARD</p>
+
+</div>
+
+</div>
+
+<div class="admin-user">
+
+<i class="fas fa-user-shield"></i>
+
+<span>Administrator</span>
+
+</div>
+
+</header>
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard">
+
+<h2>Dashboard</h2>
+
+<div class="dashboard-grid">
+
+<div class="card">
+<i class="fas fa-images"></i>
+<h3>Total Photos</h3>
+<p id="photoCount">0</p>
+</div>
+
+<div class="card">
+<i class="fas fa-video"></i>
+<h3>Total Videos</h3>
+<p id="videoCount">0</p>
+</div>
+
+<div class="card">
+<i class="fas fa-users"></i>
+<h3>Members</h3>
+<p id="memberCount">0</p>
+</div>
+
+<div class="card">
+<i class="fas fa-calendar"></i>
+<h3>Events</h3>
+<p id="eventCount">0</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Part 2 me Upload Panel -->
+  <!-- ================= PHOTO UPLOAD ================= -->
+
+<section class="upload-section">
+
+<div class="upload-card">
+
+<h2>Upload Latest Photos</h2>
+
+<input type="file"
+id="photoUpload"
+accept="image/*"
+multiple>
+
+<select id="photoYear">
+
+<option value="latest">Latest Photos</option>
+
+<option value="2024">Gallery 2024</option>
+
+<option value="2025">Gallery 2025</option>
+
+<option value="2026">Gallery 2026</option>
+
+</select>
+
+<button id="uploadPhoto">
+
+Upload Photos
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= VIDEO UPLOAD ================= -->
+
+<section class="upload-section">
+
+<div class="upload-card">
+
+<h2>Upload Latest Videos</h2>
+
+<input type="file"
+id="videoUpload"
+accept="video/*"
+multiple>
+
+<button id="uploadVideo">
+
+Upload Videos
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= MEMBER ADD ================= -->
+
+<section class="upload-section">
+
+<div class="upload-card">
+
+<h2>Add Committee Member</h2>
+
+<input
+type="text"
+id="memberName"
+placeholder="Member Name">
+
+<input
+type="text"
+id="memberPost"
+placeholder="Designation">
+
+<input
+type="url"
+id="memberInstagram"
+placeholder="Instagram Link">
+
+<input
+type="file"
+id="memberPhoto"
+accept="image/*">
+
+<button id="addMember">
+
+Add Member
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= EVENT ADD ================= -->
+
+<section class="upload-section">
+
+<div class="upload-card">
+
+<h2>Add Event</h2>
+
+<input
+type="text"
+id="eventTitle"
+placeholder="Event Title">
+
+<input
+type="date"
+id="eventDate">
+
+<textarea
+id="eventDescription"
+placeholder="Event Description"></textarea>
+
+<button id="addEvent">
+
+Publish Event
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Part 3 me Notice, Banner Upload, Logout aur Scripts -->
+  <!-- ================= NOTICE ================= -->
+
+<section class="upload-section">
+
+<div class="upload-card">
+
+<h2>Latest Notice</h2>
+
+<textarea
+id="noticeText"
+placeholder="Write Latest Notice"></textarea>
+
+<button id="publishNotice">
+
+Publish Notice
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= BANNER ================= -->
+
+<section class="upload-section">
+
+<div class="upload-card">
+
+<h2>Change Home Banner</h2>
+
+<input
+type="file"
+id="bannerUpload"
+accept="image/*">
+
+<button id="uploadBanner">
+
+Update Banner
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= SPONSOR ================= -->
+
+<section class="upload-section">
+
+<div class="upload-card">
+
+<h2>Add Sponsor</h2>
+
+<input
+type="text"
+id="sponsorName"
+placeholder="Sponsor Name">
+
+<input
+type="url"
+id="sponsorLink"
+placeholder="Website Link">
+
+<input
+type="file"
+id="sponsorLogo"
+accept="image/*">
+
+<button id="addSponsor">
+
+Add Sponsor
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= QUICK ACTION ================= -->
+
+<section class="upload-section">
+
+<div class="upload-card">
+
+<h2>Quick Actions</h2>
+
+<div class="action-buttons">
+
+<button id="refreshWebsite">
+Refresh Website
+</button>
+
+<button id="backupData">
+Backup Data
+</button>
+
+<button id="logoutAdmin">
+Logout
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="admin-footer">
+
+<p>
+
+© 2026 Shree Amcha Ganpati Mandal
+Admin Dashboard
+
+</p>
+
+</footer>
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>
