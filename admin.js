@@ -46,7 +46,11 @@ uploadPhoto.addEventListener("click", async () => {
   
 alert("Upload Button Clicked");
   
-alert(typeof supabase);
+try {
+  alert(typeof supabase);
+} catch (e) {
+  alert(e.message);
+}
   
 const file = document.getElementById("photoUpload").files[0];
 
