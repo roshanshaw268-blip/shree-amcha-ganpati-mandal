@@ -1,11 +1,9 @@
 const supabaseUrl = "https://oqlgbmjcfrvagilkawkp.supabase.co";
+const supabaseKey = "YOUR_PUBLISHABLE_KEY";
 
-const supabaseKey = "sb_publishable_jo_Kv1BCUr0mxoY6FcAnrw_9GEumP1z";
-
-const supabase = window.supabase.createClient(
+window.supabaseClient = supabase.createClient(
   supabaseUrl,
   supabaseKey
 );
 
-console.log("Supabase Connected");
-alert("Supabase JS Loaded");
+alert("Supabase Connected");
