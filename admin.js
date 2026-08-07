@@ -1,3 +1,4 @@
+alert(typeof supabase.storage);
 alert("Admin JS Loaded");
 alert(typeof supabase);
 alert(JSON.stringify(supabase));
