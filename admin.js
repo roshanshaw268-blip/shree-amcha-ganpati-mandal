@@ -58,9 +58,9 @@ uploadPhoto.addEventListener("click", async () => {
 
     const fileName = Date.now() + "_" + file.name;
 
-    const { data, error } = await supabase.storage
-      .from("photos")
-      .upload(fileName, file);
+     const { data, error } = await supabase.storage
+  .from("photos")
+  .upload(fileName, file);
 
     if (error) {
       alert(error.message);
