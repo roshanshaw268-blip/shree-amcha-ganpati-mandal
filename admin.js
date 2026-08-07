@@ -70,7 +70,7 @@ alert("Photo Uploaded Successfully");
 } catch (e) {
   alert(e.message);
   }
-
+alert(JSON.stringify(data));
 
 });
 
