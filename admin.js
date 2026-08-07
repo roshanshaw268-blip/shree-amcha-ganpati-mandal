@@ -60,17 +60,8 @@ const { data, error } = await supabase.storage
   .from("photos")
   .upload(fileName, file);
 
-if (error) {
-  alert(error.message);
-  return;
-}
-
-alert("Photo Uploaded Successfully");
-
-} catch (e) {
-  alert(e.message);
-  }
-alert(JSON.stringify(data));
+alert("DATA: " + JSON.stringify(data));
+alert("ERROR: " + JSON.stringify(error));
 
 });
 
