@@ -1,3 +1,4 @@
+alert("Admin JS Loaded");
 // ======================================
 // SHREE AMCHA GANPATI MANDAL
 // ADMIN PANEL - PART 1
