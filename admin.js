@@ -46,30 +46,29 @@ uploadPhoto.addEventListener("click", async () => {
   
 alert("Upload Button Clicked");
   
-try {
-  alert(typeof supabase);
-} catch (e) {
-  alert(e.message);
-}
-  
-const file = document.getElementById("photoUpload").files[0];
+uploadPhoto.addEventListener("click", async () => {
+  try {
+    alert("Upload Button Clicked");
 
-if(!file){
-alert("Please Select Photo");
-return;
-}
+    const file = document.getElementById("photoUpload").files[0];
 
-const fileName = Date.now() + "_" + file.name;
+    if (!file) {
+      alert("Please Select Photo");
+      return;
+    }
 
-const { data, error } = await supabase.storage
-.from("photos")
-.upload(fileName, file);
+    const fileName = Date.now() + "_" + file.name;
 
-if(error){
-alert("Upload Failed");
-console.log(error);
-return;
-}
+    const result = await supabase.storage
+      .from("photos")
+      .upload(fileName, file);
+
+    alert(JSON.stringify(result));
+
+  } catch (e) {
+    alert(e.message);
+  }
+});
 
 alert("Photo Uploaded Successfully");
 
